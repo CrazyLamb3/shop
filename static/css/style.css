@@ -1,0 +1,222 @@
+.container {
+    width: 800px;
+    margin: 0 auto;
+    background-color: #f8f8f8;
+}
+
+.container .map {
+    height: 374px;
+    width: 100%;
+}
+
+/*Меню*/
+.container .header {
+    background-color: gold;
+    height: 80px;
+}
+
+.container .header .logo {
+    float: left;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.container .header .logo img {
+    width: 60px;
+    height: 60px;
+}
+
+/*обращаемся к списку*/
+
+.container .header .menu li {
+    margin-top: 10px;
+    list-style-type: none;
+    display: inline-block;
+    height: 24px;
+    float: right;
+    margin-right: 5px;
+}
+
+
+/*обращаемся к a вложенность*/
+.container .header .menu li a {
+    font-style: italic;
+    font-size: 20px;
+    text-decoration: none;
+    color: #8B00FF;
+
+}
+
+.container .catalog .main_catalog li a {
+    text-decoration: none;
+}
+
+.container .catalog .main_catalog {
+    margin-top: -40px;
+    margin-left: -40px;
+    list-style-type: none;
+}
+
+.container .catalog .main_catalog li {
+    display: inline-block;
+}
+
+/*псевдоклассы*/
+.container .header .menu li a:hover {
+    color: white;
+}
+
+/*псевдоклассы*/
+.container .header .menu li a:active {
+    color: yellowgreen;
+}
+
+/*таблица каталога*/
+.container .catalog .top {
+    height: 30px;
+    background: red;
+    font-size: 20px;
+}
+
+/*таблица*/
+.container .catalog .table_teapot {
+    border: 1px solid #000;
+    width: 40%;
+    border-collapse: collapse;
+
+}
+
+.container .catalog .table_teapot td {
+    border: 1px solid #000;
+    text-align: center;
+}
+
+.container .footer {
+    background: gold;
+    height: 20px;
+    width: auto;
+}
+
+.container .footer .p_footer {
+    text-align: right;
+}
+
+/*подвал*/
+.container .footer a {
+    text-decoration: none;
+}
+
+/*псевдоклассы*/
+.container .footer a:hover {
+    color: red;
+}
+
+/*псевдоклассы*/
+.container .footer a:active {
+    color: yellowgreen;
+}
+
+.container .h_teapot {
+    color: black;
+    font-weight: 400;
+    font-size: 18px;
+    background-color: lavenderblush;
+}
+
+.container .catalog .short_description {
+    color: #707070;
+    font-style: italic;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.container .catalog .all_description {
+    color: #707070;
+    font-style: italic;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.container .catalog .short_description:first-letter {
+    font-size: 30px;
+    color: red;
+
+}
+
+.container .contacts {
+    list-style-type: none;
+}
+
+.container .catalog .all_description:first-letter {
+    font-size: 30px;
+    color: red;
+}
+
+/*описание товара на странице каталога*/
+.container .catalog .main_body {
+    list-style-type: none;
+    text-align: left;
+    color: #707070;
+    font-style: italic;
+    font-size: 14px;
+
+}
+
+/*outline не учитывается при подсчете ширины*/
+.container .catalog .teapot {
+    outline: 5px solid yellow;
+}
+
+.container .catalog .teapot:hover {
+    outline: none;
+}
+
+
+/*ввод текста с большой буквы*/
+.container .otzyv textarea {
+    text-transform: capitalize;
+    color: red;
+}
+
+.container .otzyv .contacts li a {
+    font-style: italic;
+    font-size: 20px;
+    text-decoration: none;
+    color: #8B00FF;
+    text-align: left;
+}
+
+.container .otzyv .contacts {
+    list-style-type: none;
+}
+
+/*text-transform - первая буква большая*/
+input[type="text"] {
+    color: red;
+    font-style: italic;
+    text-transform: capitalize;
+}
+
+input[type="tel"] {
+    color: red;
+    font-style: italic;
+}
+
+input[type="email"] {
+    color: red;
+    font-style: italic;
+    text-transform: capitalize;
+}
+
+/*при ввод меняется фон :focus*/
+input[type="email"]:focus {
+    background: yellow;
+    color: darkblue;
+}
+
+
+.container .form {
+    width: auto;
+    text-align-last: left;
+    padding-left: 40px;
+}

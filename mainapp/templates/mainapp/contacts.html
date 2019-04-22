@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Наши контакты</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <a href="/" title="Главная страница"><img src="/static/img/logo.png" alt="Logo"></a>
+            </div>
+            <ul class="menu">
+                <li><a href="/contacts/">Контакты</a></li>
+                <li><a href="/catalog/">Каталог</a></li>
+                <li><a href="/">Главная страница</a></li>
+            </ul>
+        </div>
+        <h3 class="h_teapot">Напишите отзыв:</h3>
+        <form action="#" class="form">
+            <label>Ваше имя: <input type="text" placeholder="Введите имя"><br></label>
+            <label>
+                Ваш пол:<br>
+                М <input type="radio" name="sex" value="male"><br>
+                Ж <input type="radio" name="sex" value="female"><br></label>
+            <label>Ваш e-mail: <input type="email" placeholder="Введите e-mail"><br></label>
+            <!-- проверяем чтобы телефон был корректным -->
+            <label for="phone">Ваш телефон:</label>
+            <input type="tel" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required /><br>
+            <label>
+                Напишите отзыв:<br>
+                <textarea cols="30" rows="10" maxlength="255" placeholder="Напишите отзыв, максимум 255 символов"></textarea> <br>
+            </label>
+            <input type="submit" value="Отправить отзыв через форму на сайте"><br>
+        </form>
+        <h3 class="h_teapot">Контакты для заказа товаров:</h3>
+        <ul class="contacts">
+            <li><a href="tel:+7(123)456-77-89">Оформить заказ по&nbsp;телефону</a></li>
+            <li><a href="callto:+71234567789">Оформить заказ с&nbsp;помощью звонка через Skype</a></li>
+            <li><a href="mailto:none@study.ru">Оформить заказ по&nbsp;электронной почте</a></li>
+            <li><a href="skype:study">Наш Skype для связи</a></li>
+        </ul>
+        <h3 class=h_teapot>Мы&nbsp;расположены г.Москва, Красная площадь:</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.2630054415204!2d37.618606315488876!3d55.75393329937285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a5a738fa419%3A0x7c347d506b52311f!2z0JrRgNCw0YHQvdCw0Y8g0J_Qu9C-0YnQsNC00Yw!5e0!3m2!1sru!2sru!4v1541559124062" allowfullscreen class="map"></iframe>
+
+        <div class="footer">
+            <p class="p_footer">All rigth reserved &copy <a href="http://darksh3ll.ru" target="_blank" class="portal">Portal Student</a></p>
+        </div>
+    </div>
+</body>
+
+</html>
