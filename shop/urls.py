@@ -16,11 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 import mainapp.views as mainapp
+from django.http import JsonResponse
 
 urlpatterns = [
-    path('', mainapp.main),
-    path('catalog/', mainapp.catalog),
-    path('contacts/', mainapp.contacts),
-    path('registration/', mainapp.registration),
+    path('', mainapp.main, name='main'),
+    path('catalog/', mainapp.catalog, name='catalog'),
+    path('contacts/', mainapp.contacts, name='contacts'),
+    path('registration/', mainapp.registration, name='registration'),
     path('admin/', admin.site.urls),
 ]

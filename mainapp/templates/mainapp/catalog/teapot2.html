@@ -1,22 +1,24 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html>
 
 <head>
     <meta charset="UTF-8">
     <title>Чайник№2</title>
-    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel = "stylesheet" href = "{% static 'css/style.css' %}" >
 </head>
 
 <body>
     <div class="container">
         <div class="header">
             <div class="logo">
-                <a href="/" title="Главная страница"><img src="/static/img/logo.png" alt="Logo"></a>
+                <a href="/" title="Главная страница"><img src = "{% static 'img/logo.png' %}" alt="Logo"></a>
             </div>
             <ul class="menu">
-                <li><a href="/contacts/">Контакты</a></li>
-                <li><a href="">Каталог</a></li>
-                <li><a href="/">Главная страница</a></li>
+                <li><a href="{% url 'contacts'%}">Контакты</a></li>
+                <li><a href="{% url 'catalog'%}">Каталог</a></li>
+                <li><a href="{% url 'main'%}">Главная страница</a></li>
             </ul>
         </div>
         <div class="catalog">

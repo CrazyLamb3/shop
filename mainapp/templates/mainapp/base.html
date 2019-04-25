@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {% block title %}
+        Интернет магазин чайников
+        {% endblock %}
+    </title>
+    {% block css %}
+    <link rel = "stylesheet" href = "{% static 'css/style.css' %}">
+    {% endblock %}
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            {% block logo %}
+            <div class="logo">
+                <a href="/" title="Главная страница"><img src = "{% static 'img/logo.png' %}" alt="Logo"></a>
+            </div>
+            {% endblock %}
+            {% block menu %}
+                {% include 'mainapp/includes/inc_menu_user.html'%}
+            {% endblock %}
+        </div>
+        {% block content %}
+        <div class="main_text">
+            <h3 class="h_teapot">Интернет Магазин Чайников</h3>
+            <p class="title_magazine">Вы&nbsp;находитесь в&nbsp;интернет магазине чайников</p>
+            <p class="title_magazine">Добро пожаловать в&nbsp;интернет магазин чайников</p>
+            <hr>
+        </div>
+        {% endblock %}
+        {% block footer %}
+        <div class="footer">
+            <p class="p_footer">All rigth reserved &copy {% now "Y" %}<a href="http://darksh3ll.ru" target="_blank" class="portal"> Portal Student</a></p>
+        </div>
+        {% endblock %}
+    </div>
+    {% block js %}
+    {% endblock %}
+</body>
+</html>
