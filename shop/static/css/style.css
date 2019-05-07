@@ -176,10 +176,10 @@
 
 
 /*ввод текста с большой буквы*/
-.container .otzyv textarea {
-    text-transform: capitalize;
-    color: red;
-}
+/*.container .otzyv textarea {*/
+/*    text-transform: capitalize;*/
+/*    color: red;*/
+/*}*/
 
 .container .otzyv .contacts li a {
     font-style: italic;
@@ -194,22 +194,22 @@
 }
 
 /*text-transform - первая буква большая*/
-input[type="text"] {
-    color: red;
-    font-style: italic;
-    text-transform: capitalize;
-}
+/*input[type="text"] {*/
+/*    color: red;*/
+/*    font-style: italic;*/
+/*    text-transform: capitalize;*/
+/*}*/
 
 input[type="tel"] {
     color: red;
     font-style: italic;
 }
 
-input[type="email"] {
-    color: red;
-    font-style: italic;
-    text-transform: capitalize;
-}
+/*input[type="email"] {*/
+/*    color: red;*/
+/*    font-style: italic;*/
+/*    text-transform: capitalize;*/
+/*}*/
 
 /*при ввод меняется фон :focus*/
 input[type="email"]:focus {

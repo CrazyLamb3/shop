@@ -15,8 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.conf.urls import include
 import mainapp.views as mainapp
-from django.http import JsonResponse
 from django.conf.urls.static import static
 from django.conf import settings
 
@@ -24,7 +24,7 @@ urlpatterns = [
     path('', mainapp.main, name='main'),
     path('products/', mainapp.products, name='products'),
     # path('products/', include('mainapp.urls', namespace='products')),
-    # path('category/(?P<pk>\d+)/$', mainapp.products, name='category'),
+    path('auth/', include('authapp.urls', namespace='auth')),
     path('contacts/', mainapp.contacts, name='contacts'),
     path('registration/', mainapp.registration, name='registration'),
     path('admin/', admin.site.urls),
