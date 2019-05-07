@@ -1,0 +1,30 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+{% block title %}
+    Каталог чайников в интернет магазине
+{% endblock %}
+{#{% block menu %}#}
+{#    {% include 'mainapp/includes/inc_menu_catalog.html'%}#}
+{#{% endblock %}#}
+{% block content %}
+    <h3 class="h_teapot">Каталог чайников в&nbsp;интернет магазине</h3><br>
+    {% include 'mainapp/includes/inc_menu_catalog.html'%}
+    <hr>
+    <div class="catalog">
+    {% for product in products %}
+{#        <h1 class="h_teapot">{{ product.category.name }}</h1>#}
+        <h1 class="h_teapot">{{ product.name }}</h1>
+        <a href="{{ product.image.url }}" target="_blank" title="Посмотреть в полном размере"><img src={{ product.image.url }} class="teapot" alt={{ product.name }} width="100" height="100"></a>
+        <h3 class="h_teapot">Краткое описание товара</h3>
+        {{ product.short_desc }}
+        <h3 class="h_teapot">Подробное описание товара</h3>
+        {{ product.description }}
+        <h3 class="h_teapot">Ключевые особенности</h3>
+        {{ product.key_features }}
+        <h3 class="h_teapot">Основные характеристики</h3>
+        {{ product.main_characteristics }}
+        <h3 class="h_teapot">Технические характеристики товара</h3>
+        {{ product.tech_characteristics }}
+    {% endfor %}
+    <hr>
+{% endblock %}
