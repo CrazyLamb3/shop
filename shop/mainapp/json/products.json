@@ -1,0 +1,30 @@
+[
+    {
+        "category": "Tefal",
+        "image": "products_images/1.jpg",
+        "name": "Tefal1",
+        "price": 1000,
+        "quantity": 5
+    },
+    {
+        "category": "Tefal",
+        "image": "products_images/2.jpg",
+        "name": "Tefal2",
+        "price": 2000,
+        "quantity": 1
+    },
+    {
+        "category": "Samovar",
+        "image": "products_images/3.jpg",
+        "name": "Samovar1",
+        "price": 5000,
+        "quantity": 7
+    },
+    {
+        "category": "Samovar",
+        "image": "products_images/4.jpg",
+        "name": "Samovar2",
+        "price": 1000,
+        "quantity": 15
+    }
+]

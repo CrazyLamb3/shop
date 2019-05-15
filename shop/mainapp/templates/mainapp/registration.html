@@ -1,0 +1,22 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+{% block title %}
+    Регистрация
+{% endblock %}
+{% block content %}
+        <h1>Регистрация</h1>
+        <form action="#">
+            Ваше имя: <input type="text" placeholder="Ваше имя"><br>
+            Пароль: <input type="password" placeholder="Ваш пароль"><br>
+            Ваш пол<br>
+            М <input type="radio" name="pol"><br>
+            Ж <input type="radio" name="pol"><br>
+            Ваши увлечения:<br>
+            <input type="checkbox">Музыка<br>
+            <input type="checkbox">Спорт<br>
+            <input type="checkbox">ИТ<br>
+            <input type="checkbox">Рисование<br>
+            <input type="submit" value="Зарегистрироваться"> <input type="reset" value="Очистить введенные данные">
+        </form>
+        <hr>
+{% endblock %}
