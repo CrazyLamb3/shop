@@ -1,0 +1,13 @@
+{% if user.is_authenticated %}
+    <li>
+    <a href = "{% url 'auth:edit' %}">
+        {{ user.first_name|default:'Пользователь' }}
+    </a>
+    </li>
+{% endif %}
+{% if user.is_authenticated %}
+    <li><a href = "{% url 'auth:logout' %}">выйти</a></li>
+{% else %}
+    <li><a href = "{% url 'auth:login' %}">войти</a></li>
+    <li><a href = "{% url 'auth:register' %}">регистрация</a></li>
+{% endif %}

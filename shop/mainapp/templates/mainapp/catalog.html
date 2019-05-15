@@ -21,6 +21,7 @@
         {{ product.main_characteristics }}
         <h3 class="h_teapot">Технические характеристики товара</h3>
         {{ product.tech_characteristics }}
+        <a href = "{% url 'basket:add' product.pk %}">Добавить в корзину</a>
     {% endfor %}
     <hr>
 {% endblock %}
